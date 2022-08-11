@@ -15,5 +15,3 @@ spec:
     app: rancher-demo
   sessionAffinity: None
   type: NodePort
-status:
-  loadBalancer: {}
