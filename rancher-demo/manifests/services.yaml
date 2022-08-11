@@ -1,0 +1,19 @@
+---
+
+apiVersion: v1
+kind: Service
+  name: rancher-demo-nodeport
+  namespace: default
+spec:
+  ports:
+  - name: http-nodeport
+    nodePort: 30068
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: rancher-demo
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}
