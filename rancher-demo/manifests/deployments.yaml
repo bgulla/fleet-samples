@@ -29,7 +29,7 @@ spec:
       containers:
       - env:
         - name: COW_COLOR
-          value: red
+          value: blue
         image: bgulla/rancher-demo
         imagePullPolicy: Always
         name: container-0
