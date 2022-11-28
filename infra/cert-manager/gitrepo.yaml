@@ -1,0 +1,19 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: cert-manager
+  namespace: fleet-default
+spec:
+  repo: ssh://git@github.com:rancherfederal/bullpen.git
+
+  # To target specific clusters, uncomment this block
+  # targets:
+  # - name: example
+  #   clusterSelector:
+  #     matchLabels:
+  #       cluster: example
+
+  paths:
+  - "./cert-manager/crds"
+  - "./cert-manager/cert-manager"
+  - "./cert-manager/resources"
