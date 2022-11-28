@@ -1,0 +1,10 @@
+defaultNamespace: kubewarden
+helm:
+  repo: https://charts.kubewarden.io
+  chart: kubewarden-controller
+  version: 1.0.0
+  releaseName: kubewarden-controller
+  # valuesFiles:
+  #   - values.yaml
+dependsOn:
+- name: kubewarden-helm-crds

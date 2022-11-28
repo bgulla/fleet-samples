@@ -1,0 +1,11 @@
+defaultNamespace: vault
+helm:
+  repo: https://charts.kubewarden.io
+  chart: kubewarden-defaults
+  version: 1.0.1
+  releaseName: kubewarden-defaults
+  # valuesFiles:
+  #   - values.yaml
+dependsOn:
+- name: kubewarden-helm-crds
+- name: kubewarden-helm-controller

@@ -1,0 +1,27 @@
+manager:
+  svc:
+    type: ClusterIP
+  env:
+    ssl: false
+
+# If using k3s/rke2
+# k3s:
+#   enabled: true
+#   runtimePath: /run/k3s/containerd/containerd.sock
+
+controller:
+  secret:
+    enabled: true
+
+    # Example OIDC configuration
+    # data:
+    #   oidcinitcfg.yaml: |
+    #     Issuer: https://keycloak.example.com
+    #     Client_ID: example-id
+    #     Client_Secret: example-secret
+    #     Scopes:
+    #       - openid
+    #       - profile
+    #       - email
+    #     Enable: true
+    #     Default_Role: admin
