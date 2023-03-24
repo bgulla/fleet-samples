@@ -4,7 +4,7 @@ metadata:
   name: kubewarden
   namespace: fleet-default
 spec:
-  repo: ssh://git@github.com:rancherfederal/bullpen.git
+  repo: ssh://git@github.com:bgulla/fleet-samples.git
 
   # To target specific clusters, uncomment this block
   # targets:
