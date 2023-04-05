@@ -6,9 +6,9 @@ helm:
   releaseName: longhorn
   values:
     defaultSettings:
-      createDefaultDiskLabeledNodes: true
-      defaultDataPath: /longhorn-data/
-      defaultReplicaCount: 2
+      # createDefaultDiskLabeledNodes: true
+      # defaultDataPath: /longhorn-data/
+      defaultReplicaCount: 1
       defaultDataLocality: best-effort
       replicaAutoBalance: best-effort
 diff:
