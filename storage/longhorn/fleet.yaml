@@ -1,4 +1,3 @@
-# https://github.com/rancher/rancher/issues/38672
 defaultNamespace: longhorn-system
 helm:
   repo: https://charts.rancher.io
@@ -7,8 +6,6 @@ helm:
   releaseName: longhorn
   values:
     defaultSettings:
-      # createDefaultDiskLabeledNodes: true
-      # defaultDataPath: /longhorn-data/
       defaultReplicaCount: 1
       defaultDataLocality: best-effort
       replicaAutoBalance: best-effort
