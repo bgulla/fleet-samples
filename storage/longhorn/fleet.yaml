@@ -3,6 +3,7 @@ defaultNamespace: longhorn-system
 helm:
   repo: https://charts.rancher.io
   chart: longhorn
+  version: 1.3.2
   releaseName: longhorn
   values:
     defaultSettings:
