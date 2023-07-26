@@ -1,7 +1,0 @@
-defaultNamespace: cert-manager
-
-kustomize:
-  dir: "./resources"
-
-dependsOn:
-- name: cert-manager-cert-manager

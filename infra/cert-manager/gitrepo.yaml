@@ -4,7 +4,7 @@ metadata:
   name: cert-manager
   namespace: fleet-default
 spec:
-  repo: ssh://git@github.com:rancherfederal/bullpen.git
+  repo: https://github.com/bgulla/bullpen.git
 
   # To target specific clusters, uncomment this block
   # targets:
@@ -14,6 +14,4 @@ spec:
   #       cluster: example
 
   paths:
-  - "./cert-manager/crds"
-  - "./cert-manager/cert-manager"
-  - "./cert-manager/resources"
+  - "./infra/cert-manager/"
