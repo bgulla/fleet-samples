@@ -47,16 +47,3 @@ spec:
   #     cattle:
   #       systemDefaultRegistry: "harbor.lark.lol"
         
-
----
-apiVersion: policies.kubewarden.io/v1
-kind: PolicyServer
-metadata:
-  name: reserved-instance-for-tenant-a
-spec:
-  image: ghcr.io/kubewarden/policy-server:v1.3.0
-  replicas: 2
-  env:
-  - name: KUBEWARDEN_LOG_LEVEL
-    value: debug
-
